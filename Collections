@@ -1,0 +1,48 @@
+
+# Dictionary
+empty_dict = {}
+
+grades = {"Joel": 80, "Tim": 95}
+
+joels_grade = grades["Joel"] # equals 80
+
+try:
+  kates_grade = grades["Kate"]
+except KeyError:
+  print("no grade for Kate!")
+  
+joel_has_grade = "Joel" in grades # True 
+kate_has_grade = "Kate" in grades # False
+
+joels_grade = grades.get("Joel", 0) # equals 80 
+kates_grade = grades.get("Kate", 0) # equals 0 
+no_ones_grade = grades.get("No One") # default is None
+
+### defaultdict ###
+from collections import defaultdict
+
+word_counts = defaultdict(int) # int() produces 0 
+
+document = ["dog", "cat", "dog"]
+for word in document:
+  word_counts[word] += 1
+  
+### Counter ###
+from collections import Counter
+c = Counter([0, 1, 2, 0]) # c is (basically) {0: 2, 1: 1, 2: 1}
+
+# print the 10 most common words and their counts
+for word, count in word_counts.most_common(10): 
+  print(word, count)
+  
+### set ###
+# represents a collection of distinct elements
+
+item_list = [1, 2, 3, 1, 2, 3] 
+num_items = len(item_list) # 6
+item_set = set(item_list) # {1, 2, 3}
+num_distinct_items = len(item_set) # 3
+distinct_item_list = list(item_set) # [1, 2, 3]
+# 6
+# {1, 2, 3} # 3
+# [1, 2, 3]
