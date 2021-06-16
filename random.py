@@ -12,6 +12,9 @@ random.shuffle(four_uniform_randomsz)
 choice_one = random.choice(four_uniform_randoms)
 # >> 0.5780913011344704
 
+random_float_between_two_numbers = random.uniform(20,40);
+# >> 49.58668277296182
+
 # loto 6
 loto_numbers = range(1,44)
 winning_numbers = random.sample(loto_numbers, 6)
