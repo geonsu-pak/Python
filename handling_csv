@@ -1,0 +1,14 @@
+# csv file 
+'''
+10/16/2000  pen 13.12
+05/01/2003  apple 39.03
+'''
+
+import csv
+
+with open('abc.csv', 'r') as f:
+  tab_reader = csv.reader(f, delimiter='\t')
+  for line in tab_reader:
+    date = line[0]
+    fruit = line[1]
+    price = float(line[2])
