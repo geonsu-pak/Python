@@ -9,17 +9,23 @@ Dictonary | O | O | X
 
 기능 | List | Tuple | Set | Dictonary
 ---- | ---- | ---- | ---- | ----
-생성 | list(("A","B", 1)), ["A","B", 1] | | |
-길이 | len(list) | | |
-액세스 | list[1], list[1,3], list[-1]  | | |
-변경 | list[0] = "a", list[0:2] = ["A", "b] | | |
-추가(위치)| list.insert(1, "a")  | | |
-추가(마지막) | list.append("D") | | |
-삭제(특정)| list.remove("A")
-삭제(위치) | list.pop(1) = del thislist[1]
-삭제(마지막)| list.pop()
-클리어 | list.clear()
-합치기 | list.extend(list,set,tuple or dict)
+생성 | list(("A","B", 1))    ["A","B", 1] | tuple(("A","B", 1))    ("A","B", 1)|set(("A","B", 1)), {"A","B", 1} | {key:value,...}
+길이 | len(list) | len(tuple) | len(set) | 
+액세스 | [1]    \[1,3]    \[-1] | 좌동 | | value = dic[key]    value=dic.get(key)
+변경 | [0] = "a"    [0:2] = ["A", "b] | list(tuple)->    조작->    tuple(list)  | | dic[key]=value
+추가(위치)| .insert(1, "a")  | list(tuple)    ->조작->    tuple(list)  | .add("D") | 
+추가(마지막) | .append("D") | list(tuple)->    조작->    tuple(list)  | | dic[key]=value
+삭제(특정)| .remove("A") | list(tuple)->    조작->    tuple(list)  | .remove("A")    .discard("A")| .pop(key)    del dic[key]
+삭제(위치) | .pop(1)    del thislist[1] | list(tuple)->    조작->    tuple(list)  | |
+삭제(마지막)| .pop() | list(tuple)->    조작->    tuple(list)  | .pop() |
+클리어 | .clear() | list(tuple)->    조작->    tuple(list)  | .clear() |
+합치기 | .extend(list,set,tuple or dict) | list(tuple)->    조작->    tuple(list)  | .update(list,set,tuple or dict) |
+정렬(내림차순) | .sort() 
+정렬(오름차순) | .sort(reverse=True)
+정렬(lambda) | .sort(key=lambda x:abs(x-50))
+복사 | lst = .copy()    list(list) | | .copy() | .copy()
+Unpack | | (r,g,b)=color | for key,value in dic.items():
+"  | | (r,g,*b)=(1,2,3,4,5)    -> b=[3,4,5]
 
 
 ## 휠터링한 새 리스트 생성
