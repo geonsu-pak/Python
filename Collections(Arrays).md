@@ -9,17 +9,17 @@ Dictonary | O | O | X
 
 기능 | List | Tuple | Set | Dictonary
 ---- | ---- | ---- | ---- | ----
-생성 | list(("A","B", 1))    ["A","B", 1] | tuple(("A","B", 1))    ("A","B", 1)|set(("A","B", 1)), {"A","B", 1} | {key:value,...}
-길이 | len(list) | len(tuple) | len(set) | 
-액세스 | [1]    \[1,3]    \[-1] | 좌동 | | value = dic[key]    value=dic.get(key)
-변경 | [0] = "a"    [0:2] = ["A", "b] | list(tuple)->    조작->    tuple(list)  | | dic[key]=value
-추가(위치)| .insert(1, "a")  | list(tuple)    ->조작->    tuple(list)  | .add("D") | 
-추가(마지막) | .append("D") | list(tuple)->    조작->    tuple(list)  | | dic[key]=value
-삭제(특정)| .remove("A") | list(tuple)->    조작->    tuple(list)  | .remove("A")    .discard("A")| .pop(key)    del dic[key]
-삭제(위치) | .pop(1)    del thislist[1] | list(tuple)->    조작->    tuple(list)  | |
-삭제(마지막)| .pop() | list(tuple)->    조작->    tuple(list)  | .pop() |
-클리어 | .clear() | list(tuple)->    조작->    tuple(list)  | .clear() |
-합치기 | .extend(list,set,tuple or dict) | list(tuple)->    조작->    tuple(list)  | .update(list,set,tuple or dict) |
+생성 | list(("A","B", 1))<br>["A","B", 1] | tuple(("A","B", 1))<br>("A","B", 1)|set(("A","B", 1))<br>{"A","B", 1} | {key:value,...}
+길이 | len(...) | len(...) | len(...) | 
+액세스 | lst[1] : (1+1)번째 아이템<br>lst[1,3] :1~(3-1)번째아이템<br>lst[-1] : 마지막 아이템 | 좌동 | | value = dic[key]    value=dic.get(key)
+변경 | lst[0] = "a"<br>list[0:2] = ["A", "b] | 리스트변환: list(tuple)<br>리스트동일변경<br>튜플변환: tuple(list)| | dic[key]=value
+추가(위치)| .insert(1, "a")  | 리스트변환: list(tuple)<br>리스트동일변경<br>튜플변환: tuple(list) | .add("D") | 
+추가(마지막) | .append("D") | 리스트변환: list(tuple)<br>리스트동일변경<br>튜플변환: tuple(list)  | | dic[key]=value
+삭제(특정)| .remove("A") | 리스트변환: list(tuple)<br>리스트동일변경<br>튜플변환: tuple(list)  | .remove("A")    .discard("A")| .pop(key)    del dic[key]
+삭제(위치) | .pop(1)    del thislist[1] | 리스트변환: list(tuple)<br>리스트동일변경<br>튜플변환: tuple(list)  | |
+삭제(마지막)| .pop() | 리스트변환: list(tuple)<br>리스트동일변경<br>튜플변환: tuple(list)  | .pop() |
+클리어 | .clear() | 리스트변환: list(tuple)<br>리스트동일변경<br>튜플변환: tuple(list)  | .clear() |
+합치기 | .extend(list,set,tuple or dict) | 리스트변환: list(tuple)<br>리스트동일변경<br>튜플변환: tuple(list)  | .update(list,set,tuple or dict) |
 정렬(내림차순) | .sort() 
 정렬(오름차순) | .sort(reverse=True)
 정렬(lambda) | .sort(key=lambda x:abs(x-50))
