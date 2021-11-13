@@ -8,6 +8,10 @@ https://www.anaconda.com/products/individual
 아래 컴맨드를 실행하므로써 지금 설치한 Python을 기본으로 사용하게 됨. 
 
     conda init
+python.exe 의 설치 장소 찾기    
+
+    where python
+
 
 ## 설치 확인 및 업데이트
 ### Windows 메뉴 -> Ananconda Prompt (anaconda3) 실행
