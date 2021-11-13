@@ -2,6 +2,13 @@
 ## 다운로드 : 디폴트설정 사용
 https://www.anaconda.com/products/individual
 
+### 중요
+설치중 아래 화면처럼 체크를 해주지 않으면 나중에 PATH에 ~\Anaconda3\condabin 를 등록해야 함
+<img src=https://i.stack.imgur.com/11aGz.png width=50% height=50%/>    
+아래 컴맨드를 실행하므로써 지금 설치한 Python을 기본으로 사용하게 됨. 
+
+    conda init
+
 ## 설치 확인 및 업데이트
 ### Windows 메뉴 -> Ananconda Prompt (anaconda3) 실행
 ### 설치 폴더 이동
