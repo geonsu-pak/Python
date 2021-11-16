@@ -36,6 +36,8 @@ newlist = **[expression for item in iterable if condition == True]**
     newlist = [x for x in range(10)]    
 3. 0 - 9 의 숫자중 5보다 작은수의 리스트    
     newlist = [x for x in range(10) if x < 5]    
+4. (0, 0) - (3, 3) 리스트 작성
+    newlist = [(x, y) for x in range(4) for y in range(4)]
 
 
     
